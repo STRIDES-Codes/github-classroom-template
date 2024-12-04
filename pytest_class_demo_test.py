@@ -1,9 +1,7 @@
-from pathlib import Path
 import json
 import ast
 
-filepath = Path('C:/Users/jopinney/Documents/github_classroom_testing/gh_class_quiz_test_answered.ipynb')  
-with filepath.open('r') as file:  
+with open('pytest_class_demo.ipynb','r') as file:  
     input_data = json.load(file)
 
 data_subset = input_data['cells']
